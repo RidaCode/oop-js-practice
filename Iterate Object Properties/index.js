@@ -28,3 +28,7 @@ console.log(
 for (let key in circle) {
   if (typeof circle[key] !== "function") console.log(key, circle[key]);
 }
+
+// Check if object has a given property
+console.log("~ Check if circle has a radius property");
+if ("radius" in circle) console.log("Circle has a radius.");
