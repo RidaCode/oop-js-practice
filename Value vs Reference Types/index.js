@@ -32,3 +32,12 @@ function increase(number) {
 console.log("number before increase using value types", number);
 increase(number);
 console.log("number after increase using value types", number);
+
+// Using functions with reference types
+let obj = { value: 10 };
+function increase(obj) {
+  obj.value++;
+}
+console.log("obj before increase using reference types", obj);
+increase(obj);
+console.log("obj after increase using reference types", obj);
