@@ -23,3 +23,12 @@ let a = { value: 10 };
 let b = a;
 a.value = 20;
 console.log("a", a, "b", b);
+
+// Using functions with value types
+let number = 10;
+function increase(number) {
+  number++;
+}
+console.log("number before increase using value types", number);
+increase(number);
+console.log("number after increase using value types", number);
