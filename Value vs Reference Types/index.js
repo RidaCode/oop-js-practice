@@ -16,3 +16,10 @@ console.log("x", x, "y", y);
 Object;
 Function;
 Array;
+
+// b is a reference to a,
+// in other words both a and b are pointing to the same object in memory
+let a = { value: 10 };
+let b = a;
+a.value = 20;
+console.log("a", a, "b", b);
